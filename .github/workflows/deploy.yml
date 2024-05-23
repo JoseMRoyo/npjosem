@@ -20,7 +20,7 @@ jobs:
         run: yarn install
 
       - name: Deleted .npmrc
-        run: rm .rf ~/.npmrc
+        run: rm -rf ~/.npmrc
 
       - name: Configure npm authentication
         env:
