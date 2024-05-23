@@ -1,8 +1,7 @@
 {
   "name": "@npjosem-community/plugins",
-  "private": true,
-  "version": "0.0.0",
-  "repository": "git@github.com:backstage/community-plugins.git",
+  "version": "1.0.0",
+  "repository": "git@github.com:JoseMRoyo/npjosem.git",
   "engines": {
     "node": "18 || 20"
   },
