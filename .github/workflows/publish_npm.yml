@@ -1,0 +1,31 @@
+name: Publish Packages
+
+on:
+  push:
+    branches:
+      - main
+      - master
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '14'
+
+      - name: Install dependencies
+        run: yarn install
+
+      - name: Configure npm auth token
+        run: yarn config set -H 'npmAuthToken' "${{ secrets.NPM_TOKEN }}"
+
+      - name: Publish packages
+        run: |
+          cd workspaces
+          yarn workspaces foreach -v --no-private npm publish --access public --tolerate-republish
