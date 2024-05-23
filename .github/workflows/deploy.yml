@@ -19,11 +19,13 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: Deleted .npmrc
+        run: rm .rf ~/.npmrc
+
       - name: Configure npm authentication
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-        run: rm -rf ~/.npmrc
-            echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}' > ~/.npmrc
+        run: echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}' > ~/.npmrc
     
       - name: Verify npm authentication
         run: cat ~/.npmrc
