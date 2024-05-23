@@ -35,4 +35,4 @@ jobs:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           npmAlwaysAuth: true
         run:
-          yarn workspaces foreach -v --no-private npm publish --access public --tolerate-republish --version 1.0.2
+          yarn workspaces foreach -v --no-private npm publish --access public --tolerate-republish
