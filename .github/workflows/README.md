@@ -2,15 +2,15 @@
 
 1. [ci.yml](./ci.yml)
 
-   This workflow runs on pull requests and it is supposed to run tests on the target branch. Since workspaces are isolated from each other, the workflow will perform a diff check to detect the workspaces with changes in order to speed up the checks.
-   Once all the checks succeed, the pull request can be merged.
+   Este flujo de trabajo se ejecuta en solicitudes de extracción y se supone que ejecuta pruebas en la rama de destino. Dado que los espacios de trabajo están aislados entre sí, el flujo de trabajo realizará una comprobación de diferencias para detectar los espacios de trabajo con cambios con el fin de acelerar las verificaciones.
+   Una vez que todas las comprobaciones tengan éxito, la solicitud de extracción se puede combinar. 
 
 2. [release_workspace.yml](./release_workspace.yml)
 
-   This workflow takes the name of a workspace as input and it is responsible for either creating a Version Packages PR in case there are changesets, or performing a release of the packages in the specified workspace in case some of them haven't been published.
+   Este flujo de trabajo toma el nombre de un espacio de trabajo como entrada y es responsable de crear una PR de paquetes de versión en caso de que haya cambios, o realizar una versión de los paquetes en el espacio de trabajo especificado en caso de que algunos de ellos no se hayan publicado.
 
-   Please refer to the [Changesets documentation](https://github.com/changesets/changesets) to dig more into the details about how changesets work.
+   Consulte la documentación [Conjuntos de cambios] (https://github.com/changesets/changesets) para obtener más información sobre cómo funcionan los conjuntos de cambios.
 
 3. [release-all.yml](./release-all.yml)
 
-   This workflow is responsible for releasing all the workspaces by invoking [release_workspace.yml](./release_workspace.yml) in parallel on all workspaces. The workflow runs on the main branch, whenever something new is pushed into the branch. The workflow relies on [release_workspace.yml](./release_workspace.yml) to be smart enough to skip building the selected workspace, whenever no publishing is needed.
+   Este flujo de trabajo es responsable de liberar todos los espacios de trabajo invocando [release_workspace.yml](./release_workspace.yml) en paralelo en todos los espacios de trabajo. El flujo de trabajo se ejecuta en la rama principal, cada vez que se introduce algo nuevo en la rama. El flujo de trabajo se basa en [release_workspace.yml](./release_workspace.yml) para ser lo suficientemente inteligente como para omitir la construcción del espacio de trabajo seleccionado, siempre que no sea necesario publicar.
