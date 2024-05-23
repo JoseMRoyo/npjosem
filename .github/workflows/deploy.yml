@@ -19,11 +19,14 @@ jobs:
       - name: Install dependencies
         run: yarn install
 
+      - name: Configure npm authentication
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+        run: echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}' > ~/.npmrc
+    
       - name: Publish package
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
           npmAlwaysAuth: true
-        run: |
-          echo '//registry.npmjs.org/:_authToken=${NPM_TOKEN}' > .npmrc
-          echo 'registry: https://registry.npmjs.org/' >> .yarnrc
+        run:
           yarn workspaces foreach -v --no-private npm publish --access public 
