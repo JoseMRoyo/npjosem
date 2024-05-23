@@ -22,8 +22,12 @@ jobs:
       - name: Configure npm authentication
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-        run: echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}' > ~/.npmrc
+        run: rm -rf ~/.npmrc
+            echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}' > ~/.npmrc
     
+      - name: Verify npm authentication
+        run: cat ~/.npmrc
+
       - name: Publish package
         env:
           NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
