@@ -1,6 +1,6 @@
 {
   "name": "npjosem",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": "git@github.com:JoseMRoyo/npjosem.git",
   "engines": {
     "node": "18 || 20"
