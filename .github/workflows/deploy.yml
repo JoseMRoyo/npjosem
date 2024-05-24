@@ -1,38 +1,20 @@
-name: Deploy
+name: "publish npm"
 
-on:
-  push:
-    branches: [main]
+on: push
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest
-
-    steps:
-      - uses: actions/checkout@v2
-
-      - name: Use Node.js
-        uses: actions/setup-node@v2
-        with:
-          node-version: '20'
-
-      - name: Install dependencies
-        run: yarn install
-
-      - name: Deleted .npmrc
-        run: rm -rf ~/.npmrc
-
-      - name: Configure npm authentication
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-        run: echo '//registry.npmjs.org/:_authToken=${{ secrets.NPM_TOKEN }}' > ~/.npmrc
-    
-      - name: Verify npm authentication
-        run: cat ~/.npmrc
-
-      - name: Publish package
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
-          npmAlwaysAuth: true
-        run:
-          yarn workspaces foreach -v --no-private npm publish --access public --tolerate-republish
+    publish:
+        runs-on: ubuntu-latest
+        steps:
+            - name: checkout
+              uses: actions/checkout@v2
+            - name: node
+              uses: actions/setup-node@v2
+              with:
+                  node-version: 12
+                  registry-url: https://registry.npmjs.org
+            - name: publish
+              run: yarn npm publish --access public --tolerate-republish
+              working-directory: workspaces
+              env:
+                  NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
