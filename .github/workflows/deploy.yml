@@ -15,6 +15,6 @@ jobs:
                   registry-url: https://registry.npmjs.org
             - name: publish
               run: yarn npm publish --access public --tolerate-republish
-              working-directory: npjosem
+              working-directory: workspaces
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
