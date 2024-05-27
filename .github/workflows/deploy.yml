@@ -20,6 +20,8 @@ jobs:
               run: yarn install
             - name: publish
               run: |
+                cd workspaces/airbrake
+                yarn install
                 yarn config set -H 'npmAuthToken' "${{secrets.NPM_TOKEN}}"
                 yarn workspaces foreach -v --no-private npm publish --access public --tolerate-republish
               env:
