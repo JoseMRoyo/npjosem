@@ -18,6 +18,8 @@ jobs:
                   registry-url: https://registry.npmjs.org
             - name: publish
 
-              run: npm publish --access public
+              run: |
+                yarn config set -H 'npmAuthToken' "${{secrets.NPM_TOKEN}}"
+                yarn workspaces foreach -v --no-private npm publish --access public --tolerate-republish
               env:
                   NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
