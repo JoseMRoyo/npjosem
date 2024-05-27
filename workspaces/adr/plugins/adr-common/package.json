@@ -1,5 +1,5 @@
 {
-  "name": "@backstage-community/plugin-adr-common",
+  "name": "@npjosem/plugin-adr-common",
   "version": "0.2.24",
   "description": "Common functionalities for the adr plugin",
   "backstage": {

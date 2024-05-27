@@ -1,5 +1,5 @@
 {
-  "name": "@backstage-community/plugin-adr",
+  "name": "@npjosem/plugin-adr",
   "version": "0.6.19",
   "backstage": {
     "role": "frontend-plugin"

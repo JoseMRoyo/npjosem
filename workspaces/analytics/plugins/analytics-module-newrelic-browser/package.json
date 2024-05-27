@@ -1,5 +1,5 @@
 {
-  "name": "@backstage-community/plugin-analytics-module-newrelic-browser",
+  "name": "@npjosem/plugin-analytics-module-newrelic-browser",
   "version": "0.1.5",
   "backstage": {
     "role": "frontend-plugin-module"
