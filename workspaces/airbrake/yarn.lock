@@ -2542,58 +2542,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@backstage-community/plugin-airbrake-backend@workspace:plugins/airbrake-backend":
-  version: 0.0.0-use.local
-  resolution: "@backstage-community/plugin-airbrake-backend@workspace:plugins/airbrake-backend"
-  dependencies:
-    "@backstage/backend-common": ^0.21.7
-    "@backstage/backend-plugin-api": ^0.6.17
-    "@backstage/backend-test-utils": ^0.3.7
-    "@backstage/cli": ^0.26.3
-    "@backstage/config": ^1.2.0
-    "@types/express": "*"
-    "@types/http-proxy-middleware": ^1.0.0
-    "@types/supertest": ^2.0.8
-    express: ^4.17.1
-    express-promise-router: ^4.1.0
-    http-proxy-middleware: ^2.0.0
-    supertest: ^6.1.6
-    yn: ^4.0.0
-  languageName: unknown
-  linkType: soft
-
-"@backstage-community/plugin-airbrake@workspace:plugins/airbrake":
-  version: 0.0.0-use.local
-  resolution: "@backstage-community/plugin-airbrake@workspace:plugins/airbrake"
-  dependencies:
-    "@backstage/app-defaults": ^1.5.4
-    "@backstage/catalog-model": ^1.4.5
-    "@backstage/cli": ^0.26.3
-    "@backstage/core-components": ^0.14.4
-    "@backstage/core-plugin-api": ^1.9.2
-    "@backstage/dev-utils": ^1.0.31
-    "@backstage/plugin-catalog-react": ^1.11.3
-    "@backstage/test-utils": ^1.5.4
-    "@material-ui/core": ^4.12.2
-    "@material-ui/icons": ^4.9.1
-    "@testing-library/dom": ^10.0.0
-    "@testing-library/jest-dom": ^6.0.0
-    "@testing-library/react": ^15.0.0
-    "@types/react": ^16.13.1 || ^17.0.0 || ^18.0.0
-    "@types/react-dom": ^18.2.19
-    canvas: ^2.11.2
-    msw: ^1.0.0
-    react: ^16.13.1 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
-    react-router-dom: 6.0.0-beta.0 || ^6.3.0
-    react-use: ^17.2.4
-  peerDependencies:
-    react: ^16.13.1 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
-    react-router-dom: 6.0.0-beta.0 || ^6.3.0
-  languageName: unknown
-  linkType: soft
-
 "@backstage/app-defaults@npm:^1.5.4, @backstage/app-defaults@npm:^1.5.5":
   version: 1.5.5
   resolution: "@backstage/app-defaults@npm:1.5.5"
@@ -5388,6 +5336,58 @@ __metadata:
     node-gyp: ^10.0.0
     prettier: ^2.3.2
     typescript: ~5.3.0
+  languageName: unknown
+  linkType: soft
+
+"@npjosem/plugin-airbrake-backend@workspace:plugins/airbrake-backend":
+  version: 0.0.0-use.local
+  resolution: "@npjosem/plugin-airbrake-backend@workspace:plugins/airbrake-backend"
+  dependencies:
+    "@backstage/backend-common": ^0.21.7
+    "@backstage/backend-plugin-api": ^0.6.17
+    "@backstage/backend-test-utils": ^0.3.7
+    "@backstage/cli": ^0.26.3
+    "@backstage/config": ^1.2.0
+    "@types/express": "*"
+    "@types/http-proxy-middleware": ^1.0.0
+    "@types/supertest": ^2.0.8
+    express: ^4.17.1
+    express-promise-router: ^4.1.0
+    http-proxy-middleware: ^2.0.0
+    supertest: ^6.1.6
+    yn: ^4.0.0
+  languageName: unknown
+  linkType: soft
+
+"@npjosem/plugin-airbrake@workspace:plugins/airbrake":
+  version: 0.0.0-use.local
+  resolution: "@npjosem/plugin-airbrake@workspace:plugins/airbrake"
+  dependencies:
+    "@backstage/app-defaults": ^1.5.4
+    "@backstage/catalog-model": ^1.4.5
+    "@backstage/cli": ^0.26.3
+    "@backstage/core-components": ^0.14.4
+    "@backstage/core-plugin-api": ^1.9.2
+    "@backstage/dev-utils": ^1.0.31
+    "@backstage/plugin-catalog-react": ^1.11.3
+    "@backstage/test-utils": ^1.5.4
+    "@material-ui/core": ^4.12.2
+    "@material-ui/icons": ^4.9.1
+    "@testing-library/dom": ^10.0.0
+    "@testing-library/jest-dom": ^6.0.0
+    "@testing-library/react": ^15.0.0
+    "@types/react": ^16.13.1 || ^17.0.0 || ^18.0.0
+    "@types/react-dom": ^18.2.19
+    canvas: ^2.11.2
+    msw: ^1.0.0
+    react: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-router-dom: 6.0.0-beta.0 || ^6.3.0
+    react-use: ^17.2.4
+  peerDependencies:
+    react: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-router-dom: 6.0.0-beta.0 || ^6.3.0
   languageName: unknown
   linkType: soft
 
