@@ -16,8 +16,9 @@ jobs:
               with:
                   node-version: 12
                   registry-url: https://registry.npmjs.org
+            - name: yarn install
+              run: yarn install
             - name: publish
-
               run: |
                 yarn config set -H 'npmAuthToken' "${{secrets.NPM_TOKEN}}"
                 yarn workspaces foreach -v --no-private npm publish --access public --tolerate-republish
