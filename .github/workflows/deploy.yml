@@ -1,4 +1,4 @@
-name: "publish npm"
+name: "publish airbrake"
 
 on: 
   push:
@@ -18,6 +18,10 @@ jobs:
                   registry-url: https://registry.npmjs.org
             - name: yarn install
               run: yarn install
+            - name: entry airbrake
+            - run: |
+                cd workspaces/airbrake/
+                yarn install
             - name: publish
               run: |
                 yarn config set -H 'npmAuthToken' "${{secrets.NPM_TOKEN}}"
