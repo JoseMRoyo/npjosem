@@ -1,7 +1,7 @@
 {
-  "name": "npjosem-community",
+  "name": "@npjosem-community/plugins",
   "private": true,
-  "version": "0.0.0",
+  "version": "1.0.0",
   "repository": "git@github.com:JoseMRoyo/npjosem.git",
   "scripts": {
     "create-workspace": "community-cli workspace create"
