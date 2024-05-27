@@ -1,6 +1,6 @@
 {
-  "name": "@npjosem-community/plugins",
-  "version": "1.0.5",
+  "name": "npjosem-community",
+  "version": "1.0.0",
   "author": "Jose Martin",
   "repository": "git@github.com:JoseMRoyo/npjosem.git",
   "scripts": {
