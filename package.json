@@ -6,7 +6,9 @@
   "scripts": {
     "create-workspace": "community-cli workspace create"
   },
-  "files": ["workspaces"],
+  "files": [
+    "workspaces"
+  ],
   "type": "module",
   "packageManager": "yarn@3.2.3",
   "dependencies": {
