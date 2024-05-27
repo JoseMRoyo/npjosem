@@ -18,12 +18,9 @@ jobs:
                   registry-url: https://registry.npmjs.org
             - name: yarn install
               run: yarn install
-            - name: entry airbrake
-            - run: |
-                cd workspaces/airbrake/
-                yarn install
             - name: publish
               run: |
+                cd workspaces/airbrake/
                 yarn config set -H 'npmAuthToken' "${{secrets.NPM_TOKEN}}"
                 yarn workspaces foreach -v --no-private npm publish --access public
               env:
