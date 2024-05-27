@@ -1615,9 +1615,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@backstage-community/cli@portal:./workspaces/repo-tools/packages/cli::locator=npjosem-community%40workspace%3A.":
+"@backstage-community/cli@portal:./workspaces/repo-tools/packages/cli::locator=npjosem-community-plugins%40workspace%3A.":
   version: 0.0.0-use.local
-  resolution: "@backstage-community/cli@portal:./workspaces/repo-tools/packages/cli::locator=npjosem-community%40workspace%3A."
+  resolution: "@backstage-community/cli@portal:./workspaces/repo-tools/packages/cli::locator=npjosem-community-plugins%40workspace%3A."
   dependencies:
     "@backstage/cli": ^0.26.2
     "@backstage/errors": ^1.2.4
@@ -10942,9 +10942,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"npjosem-community@workspace:.":
+"npjosem-community-plugins@workspace:.":
   version: 0.0.0-use.local
-  resolution: "npjosem-community@workspace:."
+  resolution: "npjosem-community-plugins@workspace:."
   dependencies:
     "@backstage-community/cli": "portal:./workspaces/repo-tools/packages/cli"
     "@backstage/cli-node": ^0.2.2
