@@ -1,5 +1,5 @@
 {
-  "name": "@backstage-community/plugin-apollo-explorer",
+  "name": "@npjosem/plugin-apollo-explorer",
   "version": "0.2.1",
   "backstage": {
     "role": "frontend-plugin"
