@@ -1,10 +1,12 @@
 {
-  "name": "npjosem-community",
-  "version": "1.0.4",
+  "name": "@npjosem-community/plugins",
+  "version": "1.0.5",
+  "author": "Jose Martin",
   "repository": "git@github.com:JoseMRoyo/npjosem.git",
   "scripts": {
     "create-workspace": "community-cli workspace create"
   },
+  "files": ["workspaces"],
   "type": "module",
   "packageManager": "yarn@3.2.3",
   "dependencies": {
