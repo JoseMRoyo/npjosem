@@ -1,10 +1,7 @@
 {
-  "name": "npjosem",
-  "version": "1.0.2",
+  "name": "@npjosem/workspaces",
+  "version": "1.0.3",
   "repository": "git@github.com:JoseMRoyo/npjosem.git",
-  "engines": {
-    "node": "18 || 20"
-  },
   "scripts": {
     "create-workspace": "community-cli workspace create"
   },
