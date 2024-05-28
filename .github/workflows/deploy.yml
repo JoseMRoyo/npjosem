@@ -38,6 +38,6 @@ jobs:
                 cd workspaces/adr/
                 npm install
                 echo "@npjosem:registry=https://npm.pkg.github.com/"> ./.npmrc
-                echo "//npm.pkg.github.com/:_authToken=${{ steps.generate-token.outputs.token }}" >> ./.npmrc
+                echo "//npm.pkg.github.com/:_authToken=${{ secrets.AUTH_GITHUB_TOKEN }}" >> ./.npmrc
                 cat ./.npmrc
                 yarn workspaces foreach -v npm publish --access private --tolerate-republish
