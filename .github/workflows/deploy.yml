@@ -37,6 +37,7 @@ jobs:
               run: |
                 cd workspaces/badges/
                 npm install
+                npm ci
                 echo "@npjosem:registry=https://npm.pkg.github.com/"> ./.npmrc
                 echo "//npm.pkg.github.com/:_authToken=${{ secrets.AUTH_GITHUB_TOKEN }}" >> ./.npmrc
                 cat ./.npmrc
