@@ -40,4 +40,4 @@ jobs:
                 echo "@npjosem:registry=https://npm.pkg.github.com/"> ./.npmrc
                 echo "//npm.pkg.github.com/:_authToken=${{ secrets.AUTH_GITHUB_TOKEN }}" >> ./.npmrc
                 cat ./.npmrc
-                yarn foreach -v npm publish --access private --tolerate-republish
+                yarn workspaces foreach -v npm publish --access private --tolerate-republish
