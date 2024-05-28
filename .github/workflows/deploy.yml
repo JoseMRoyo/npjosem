@@ -1,4 +1,4 @@
-name: "publish airbrake"
+name: "publish"
 
 on: 
   push:
@@ -20,9 +20,9 @@ jobs:
               run: yarn install
             - name: publish
               run: |
-                cd workspaces
+                cd $path
                 yarn install
-                yarn config set -H 'npmAuthToken' "${{secrets.NPM_TOKEN}}"
-                yarn workspaces foreach -v --no-private npm publish --access public --tolerate-republish
-              env:
-                  NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+                echo "@npjosem:registry=https://npm.pkg.github.com/"> ./.npmrc
+                echo "//npm.pkg.github.com/:_authToken=${{ steps.generate-token.outputs.token }}" >> ./.npmrc
+                cat ./.npmrc
+                yarn workspaces foreach -v npm publish --access private --tolerate-republish
