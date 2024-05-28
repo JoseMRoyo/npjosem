@@ -15,7 +15,7 @@
   "homepage": "https://backstage.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/backstage/community-plugins",
+    "url": "https://github.com/JoseMRoyo/npjosem",
     "directory": "workspaces/adr/plugins/adr-backend"
   },
   "scripts": {
@@ -28,7 +28,6 @@
     "postpack": "backstage-cli package postpack"
   },
   "dependencies": {
-    "@backstage-community/plugin-adr-common": "workspace:^",
     "@backstage/backend-common": "^0.22.0",
     "@backstage/backend-plugin-api": "^0.6.18",
     "@backstage/catalog-client": "^1.6.5",
@@ -37,6 +36,7 @@
     "@backstage/errors": "^1.2.4",
     "@backstage/integration": "^1.11.0",
     "@backstage/plugin-search-common": "^1.2.11",
+    "@npjosem/plugin-adr-common": "workspace:^",
     "@types/express": "^4.17.6",
     "express": "^4.17.1",
     "express-promise-router": "^4.1.0",

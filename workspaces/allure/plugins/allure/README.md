@@ -6,7 +6,7 @@ Welcome to the Backstage Allure plugin. This plugin add an entity service page t
 
 ```shell
 # From your Backstage root directory
-yarn --cwd packages/app add @backstage-community/plugin-allure
+yarn --cwd packages/app add @npjosem/plugin-allure
 ```
 
 ## Configure
