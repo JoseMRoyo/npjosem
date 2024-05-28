@@ -31,13 +31,13 @@ jobs:
             #         break
             #     fi
             #     done
-            - name: yarn install
-              run: yarn install
+            - name: npm install
+              run: npm install
             - name: publish
               run: |
                 cd workspaces/adr/
-                yarn install
+                npm install
                 echo "@npjosem:registry=https://npm.pkg.github.com/"> ./.npmrc
                 echo "//npm.pkg.github.com/:_authToken=${{ steps.generate-token.outputs.token }}" >> ./.npmrc
                 cat ./.npmrc
-                yarn workspaces foreach -v npm publish --access private --tolerate-republish
+                npm publish -v --access private --tolerate-republish
