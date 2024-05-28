@@ -1,5 +1,5 @@
 {
-  "name": "@backstage-community/plugin-badges-backend",
+  "name": "@npjosem/plugin-badges-backend",
   "version": "0.4.1",
   "description": "A Backstage backend plugin that generates README badges for your entities",
   "backstage": {
@@ -17,7 +17,7 @@
   "homepage": "https://backstage.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/backstage/community-plugins",
+    "url": "https://github.com/JoseMRoyo/npjosem",
     "directory": "workspaces/badges/plugins/badges-backend"
   },
   "license": "Apache-2.0",

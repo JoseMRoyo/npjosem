@@ -1,6 +1,6 @@
 # Badges Backend
 
-Backend plugin for serving badges to the `@backstage-community/plugin-badges` plugin.
+Backend plugin for serving badges to the `@npjosem/plugin-badges` plugin.
 Default implementation uses
 [badge-maker](https://www.npmjs.com/package/badge-maker) for creating the
 badges, in SVG.
@@ -11,11 +11,11 @@ endpoint.
 
 ## Installation
 
-Install the `@backstage-community/plugin-badges-backend` package in your backend package:
+Install the `@npjosem/plugin-badges-backend` package in your backend package:
 
 ```bash
 # From your Backstage root directory
-yarn --cwd packages/backend add @backstage-community/plugin-badges-backend
+yarn --cwd packages/backend add @npjosem/plugin-badges-backend
 ```
 
 Add the plugin using the following default setup for
