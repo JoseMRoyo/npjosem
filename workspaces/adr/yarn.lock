@@ -2512,81 +2512,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@backstage-community/plugin-adr-backend@workspace:plugins/adr-backend":
-  version: 0.0.0-use.local
-  resolution: "@backstage-community/plugin-adr-backend@workspace:plugins/adr-backend"
-  dependencies:
-    "@backstage-community/plugin-adr-common": "workspace:^"
-    "@backstage/backend-common": ^0.22.0
-    "@backstage/backend-plugin-api": ^0.6.18
-    "@backstage/catalog-client": ^1.6.5
-    "@backstage/catalog-model": ^1.5.0
-    "@backstage/cli": ^0.26.5
-    "@backstage/config": ^1.2.0
-    "@backstage/errors": ^1.2.4
-    "@backstage/integration": ^1.11.0
-    "@backstage/plugin-search-common": ^1.2.11
-    "@types/express": ^4.17.6
-    "@types/node-fetch": ^2.5.12
-    "@types/supertest": ^2.0.8
-    express: ^4.17.1
-    express-promise-router: ^4.1.0
-    luxon: ^3.0.0
-    marked: ^12.0.0
-    node-fetch: ^2.6.5
-    supertest: ^6.1.3
-    yn: ^4.0.0
-  languageName: unknown
-  linkType: soft
-
-"@backstage-community/plugin-adr-common@workspace:^, @backstage-community/plugin-adr-common@workspace:plugins/adr-common":
-  version: 0.0.0-use.local
-  resolution: "@backstage-community/plugin-adr-common@workspace:plugins/adr-common"
-  dependencies:
-    "@backstage/catalog-model": ^1.5.0
-    "@backstage/cli": ^0.26.5
-    "@backstage/integration": ^1.11.0
-    "@backstage/plugin-search-common": ^1.2.11
-    front-matter: ^4.0.2
-    luxon: ^3.0.0
-  languageName: unknown
-  linkType: soft
-
-"@backstage-community/plugin-adr@workspace:plugins/adr":
-  version: 0.0.0-use.local
-  resolution: "@backstage-community/plugin-adr@workspace:plugins/adr"
-  dependencies:
-    "@backstage-community/plugin-adr-common": "workspace:^"
-    "@backstage/catalog-model": ^1.5.0
-    "@backstage/cli": ^0.26.5
-    "@backstage/core-components": ^0.14.7
-    "@backstage/core-plugin-api": ^1.9.2
-    "@backstage/frontend-plugin-api": ^0.6.5
-    "@backstage/integration-react": ^1.1.27
-    "@backstage/plugin-catalog-react": ^1.12.0
-    "@backstage/plugin-search-common": ^1.2.11
-    "@backstage/plugin-search-react": ^1.7.11
-    "@material-ui/core": ^4.12.2
-    "@material-ui/icons": ^4.9.1
-    "@testing-library/dom": ^10.0.0
-    "@testing-library/jest-dom": ^6.0.0
-    "@testing-library/react": ^15.0.0
-    "@types/lodash": ^4.14.151
-    "@types/react": ^16.13.1 || ^17.0.0 || ^18.0.0
-    "@types/react-dom": ^18.2.19
-    canvas: ^2.11.2
-    lodash: ^4.17.21
-    react: ^16.13.1 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
-    react-router-dom: 6.0.0-beta.0 || ^6.3.0
-    react-use: ^17.2.4
-  peerDependencies:
-    react: ^16.13.1 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
-    react-router-dom: 6.0.0-beta.0 || ^6.3.0
-  languageName: unknown
-  linkType: soft
-
 "@backstage/backend-app-api@npm:^0.7.3":
   version: 0.7.3
   resolution: "@backstage/backend-app-api@npm:0.7.3"
@@ -4153,21 +4078,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@internal/adr@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@internal/adr@workspace:."
-  dependencies:
-    "@backstage/cli": ^0.26.5
-    "@backstage/e2e-test-utils": ^0.1.1
-    "@backstage/repo-tools": ^0.9.0
-    "@changesets/cli": ^2.27.1
-    "@spotify/prettier-config": ^15.0.0
-    node-gyp: ^10.0.0
-    prettier: ^2.3.2
-    typescript: ~5.3.0
-  languageName: unknown
-  linkType: soft
-
 "@ioredis/commands@npm:^1.1.1":
   version: 1.1.1
   resolution: "@ioredis/commands@npm:1.1.1"
@@ -5150,6 +5060,96 @@ __metadata:
   checksum: 190c643f156d8f8f277bf2a6078af1ffde1fd43f498f187c2db24d35b4b4b5785c02c7dc52e356497b9a1b65b13edc996de08de0b961c32844364da02986dc53
   languageName: node
   linkType: hard
+
+"@npjosem/adr@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@npjosem/adr@workspace:."
+  dependencies:
+    "@backstage/cli": ^0.26.5
+    "@backstage/e2e-test-utils": ^0.1.1
+    "@backstage/repo-tools": ^0.9.0
+    "@changesets/cli": ^2.27.1
+    "@spotify/prettier-config": ^15.0.0
+    node-gyp: ^10.0.0
+    prettier: ^2.3.2
+    typescript: ~5.3.0
+  languageName: unknown
+  linkType: soft
+
+"@npjosem/plugin-adr-backend@workspace:plugins/adr-backend":
+  version: 0.0.0-use.local
+  resolution: "@npjosem/plugin-adr-backend@workspace:plugins/adr-backend"
+  dependencies:
+    "@backstage/backend-common": ^0.22.0
+    "@backstage/backend-plugin-api": ^0.6.18
+    "@backstage/catalog-client": ^1.6.5
+    "@backstage/catalog-model": ^1.5.0
+    "@backstage/cli": ^0.26.5
+    "@backstage/config": ^1.2.0
+    "@backstage/errors": ^1.2.4
+    "@backstage/integration": ^1.11.0
+    "@backstage/plugin-search-common": ^1.2.11
+    "@npjosem/plugin-adr-common": "workspace:^"
+    "@types/express": ^4.17.6
+    "@types/node-fetch": ^2.5.12
+    "@types/supertest": ^2.0.8
+    express: ^4.17.1
+    express-promise-router: ^4.1.0
+    luxon: ^3.0.0
+    marked: ^12.0.0
+    node-fetch: ^2.6.5
+    supertest: ^6.1.3
+    yn: ^4.0.0
+  languageName: unknown
+  linkType: soft
+
+"@npjosem/plugin-adr-common@workspace:^, @npjosem/plugin-adr-common@workspace:plugins/adr-common":
+  version: 0.0.0-use.local
+  resolution: "@npjosem/plugin-adr-common@workspace:plugins/adr-common"
+  dependencies:
+    "@backstage/catalog-model": ^1.5.0
+    "@backstage/cli": ^0.26.5
+    "@backstage/integration": ^1.11.0
+    "@backstage/plugin-search-common": ^1.2.11
+    front-matter: ^4.0.2
+    luxon: ^3.0.0
+  languageName: unknown
+  linkType: soft
+
+"@npjosem/plugin-adr@workspace:plugins/adr":
+  version: 0.0.0-use.local
+  resolution: "@npjosem/plugin-adr@workspace:plugins/adr"
+  dependencies:
+    "@backstage/catalog-model": ^1.5.0
+    "@backstage/cli": ^0.26.5
+    "@backstage/core-components": ^0.14.7
+    "@backstage/core-plugin-api": ^1.9.2
+    "@backstage/frontend-plugin-api": ^0.6.5
+    "@backstage/integration-react": ^1.1.27
+    "@backstage/plugin-catalog-react": ^1.12.0
+    "@backstage/plugin-search-common": ^1.2.11
+    "@backstage/plugin-search-react": ^1.7.11
+    "@material-ui/core": ^4.12.2
+    "@material-ui/icons": ^4.9.1
+    "@npjosem/plugin-adr-common": "workspace:^"
+    "@testing-library/dom": ^10.0.0
+    "@testing-library/jest-dom": ^6.0.0
+    "@testing-library/react": ^15.0.0
+    "@types/lodash": ^4.14.151
+    "@types/react": ^16.13.1 || ^17.0.0 || ^18.0.0
+    "@types/react-dom": ^18.2.19
+    canvas: ^2.11.2
+    lodash: ^4.17.21
+    react: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-router-dom: 6.0.0-beta.0 || ^6.3.0
+    react-use: ^17.2.4
+  peerDependencies:
+    react: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-router-dom: 6.0.0-beta.0 || ^6.3.0
+  languageName: unknown
+  linkType: soft
 
 "@npmcli/agent@npm:^2.0.0":
   version: 2.2.0

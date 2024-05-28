@@ -12,7 +12,7 @@ This plugin allows you to explore ADRs (Architecture Decision Records) associate
 
 ```bash
 # From your Backstage root directory
-yarn --cwd packages/app add @backstage-community/plugin-adr
+yarn --cwd packages/app add @npjosem/plugin-adr
 ```
 
 2. Make sure the [ADR backend plugin](../adr-backend/README.md) is installed.
