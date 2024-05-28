@@ -2512,66 +2512,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@backstage-community/plugin-badges-backend@workspace:plugins/badges-backend":
-  version: 0.0.0-use.local
-  resolution: "@backstage-community/plugin-badges-backend@workspace:plugins/badges-backend"
-  dependencies:
-    "@backstage/backend-common": ^0.21.7
-    "@backstage/backend-plugin-api": ^0.6.17
-    "@backstage/backend-test-utils": ^0.3.7
-    "@backstage/catalog-client": ^1.6.4
-    "@backstage/catalog-model": ^1.4.5
-    "@backstage/cli": ^0.26.3
-    "@backstage/config": ^1.2.0
-    "@backstage/errors": ^1.2.4
-    "@backstage/plugin-auth-node": ^0.4.12
-    "@types/express": ^4.17.6
-    "@types/lodash": ^4.14.151
-    "@types/supertest": ^2.0.8
-    "@types/uuid": ^9.0.0
-    badge-maker: ^3.3.0
-    cors: ^2.8.5
-    express: ^4.17.1
-    express-promise-router: ^4.1.0
-    knex: ^3.0.0
-    lodash: ^4.17.21
-    supertest: ^6.3.3
-    uuid: ^9.0.0
-    winston: ^3.2.1
-    yn: ^4.0.0
-  languageName: unknown
-  linkType: soft
-
-"@backstage-community/plugin-badges@workspace:plugins/badges":
-  version: 0.0.0-use.local
-  resolution: "@backstage-community/plugin-badges@workspace:plugins/badges"
-  dependencies:
-    "@backstage/catalog-model": ^1.4.5
-    "@backstage/cli": ^0.26.3
-    "@backstage/core-components": ^0.14.4
-    "@backstage/core-plugin-api": ^1.9.2
-    "@backstage/dev-utils": ^1.0.31
-    "@backstage/errors": ^1.2.4
-    "@backstage/plugin-catalog-react": ^1.11.3
-    "@backstage/test-utils": ^1.5.4
-    "@material-ui/core": ^4.12.2
-    "@testing-library/dom": ^10.0.0
-    "@testing-library/jest-dom": ^6.0.0
-    "@testing-library/react": ^15.0.0
-    "@types/react": ^16.13.1 || ^17.0.0 || ^18.0.0
-    "@types/react-dom": ^18.2.19
-    canvas: ^2.11.2
-    react: ^16.13.1 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
-    react-router-dom: 6.0.0-beta.0 || ^6.3.0
-    react-use: ^17.2.4
-  peerDependencies:
-    react: ^16.13.1 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
-    react-router-dom: 6.0.0-beta.0 || ^6.3.0
-  languageName: unknown
-  linkType: soft
-
 "@backstage/app-defaults@npm:^1.5.4":
   version: 1.5.4
   resolution: "@backstage/app-defaults@npm:1.5.4"
@@ -4232,21 +4172,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@internal/badges@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "@internal/badges@workspace:."
-  dependencies:
-    "@backstage/cli": ^0.26.3
-    "@backstage/e2e-test-utils": ^0.1.1
-    "@backstage/repo-tools": ^0.8.0
-    "@changesets/cli": ^2.27.1
-    "@spotify/prettier-config": ^15.0.0
-    node-gyp: ^10.0.0
-    prettier: ^2.3.2
-    typescript: ~5.3.0
-  languageName: unknown
-  linkType: soft
-
 "@ioredis/commands@npm:^1.1.1":
   version: 1.1.1
   resolution: "@ioredis/commands@npm:1.1.1"
@@ -5255,6 +5180,81 @@ __metadata:
   checksum: 190c643f156d8f8f277bf2a6078af1ffde1fd43f498f187c2db24d35b4b4b5785c02c7dc52e356497b9a1b65b13edc996de08de0b961c32844364da02986dc53
   languageName: node
   linkType: hard
+
+"@npjosem/badges@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "@npjosem/badges@workspace:."
+  dependencies:
+    "@backstage/cli": ^0.26.3
+    "@backstage/e2e-test-utils": ^0.1.1
+    "@backstage/repo-tools": ^0.8.0
+    "@changesets/cli": ^2.27.1
+    "@spotify/prettier-config": ^15.0.0
+    node-gyp: ^10.0.0
+    prettier: ^2.3.2
+    typescript: ~5.3.0
+  languageName: unknown
+  linkType: soft
+
+"@npjosem/plugin-badges-backend@workspace:plugins/badges-backend":
+  version: 0.0.0-use.local
+  resolution: "@npjosem/plugin-badges-backend@workspace:plugins/badges-backend"
+  dependencies:
+    "@backstage/backend-common": ^0.21.7
+    "@backstage/backend-plugin-api": ^0.6.17
+    "@backstage/backend-test-utils": ^0.3.7
+    "@backstage/catalog-client": ^1.6.4
+    "@backstage/catalog-model": ^1.4.5
+    "@backstage/cli": ^0.26.3
+    "@backstage/config": ^1.2.0
+    "@backstage/errors": ^1.2.4
+    "@backstage/plugin-auth-node": ^0.4.12
+    "@types/express": ^4.17.6
+    "@types/lodash": ^4.14.151
+    "@types/supertest": ^2.0.8
+    "@types/uuid": ^9.0.0
+    badge-maker: ^3.3.0
+    cors: ^2.8.5
+    express: ^4.17.1
+    express-promise-router: ^4.1.0
+    knex: ^3.0.0
+    lodash: ^4.17.21
+    supertest: ^6.3.3
+    uuid: ^9.0.0
+    winston: ^3.2.1
+    yn: ^4.0.0
+  languageName: unknown
+  linkType: soft
+
+"@npjosem/plugin-badges@workspace:plugins/badges":
+  version: 0.0.0-use.local
+  resolution: "@npjosem/plugin-badges@workspace:plugins/badges"
+  dependencies:
+    "@backstage/catalog-model": ^1.4.5
+    "@backstage/cli": ^0.26.3
+    "@backstage/core-components": ^0.14.4
+    "@backstage/core-plugin-api": ^1.9.2
+    "@backstage/dev-utils": ^1.0.31
+    "@backstage/errors": ^1.2.4
+    "@backstage/plugin-catalog-react": ^1.11.3
+    "@backstage/test-utils": ^1.5.4
+    "@material-ui/core": ^4.12.2
+    "@testing-library/dom": ^10.0.0
+    "@testing-library/jest-dom": ^6.0.0
+    "@testing-library/react": ^15.0.0
+    "@types/react": ^16.13.1 || ^17.0.0 || ^18.0.0
+    "@types/react-dom": ^18.2.19
+    canvas: ^2.11.2
+    react: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-router-dom: 6.0.0-beta.0 || ^6.3.0
+    react-use: ^17.2.4
+  peerDependencies:
+    react: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.13.1 || ^17.0.0 || ^18.0.0
+    react-router-dom: 6.0.0-beta.0 || ^6.3.0
+  languageName: unknown
+  linkType: soft
 
 "@npmcli/agent@npm:^2.0.0":
   version: 2.2.0

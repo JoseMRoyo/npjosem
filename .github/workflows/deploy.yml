@@ -35,7 +35,7 @@ jobs:
               run: yarn install
             - name: publish
               run: |
-                cd workspaces/adr/
+                cd workspaces/badges/
                 npm install
                 echo "@npjosem:registry=https://npm.pkg.github.com/"> ./.npmrc
                 echo "//npm.pkg.github.com/:_authToken=${{ secrets.AUTH_GITHUB_TOKEN }}" >> ./.npmrc
