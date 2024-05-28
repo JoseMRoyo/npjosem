@@ -37,7 +37,5 @@ jobs:
               run: |
                 cd workspaces/badges/
                 yarn install
-                echo "@npjosem:registry=https://npm.pkg.github.com/"> ./.npmrc
-                echo "//npm.pkg.github.com/:_authToken=${{ secrets.AUTH_GITHUB_TOKEN }}" >> ./.npmrc
-                cat ./.npmrc
+                yarn config set -H 'npmAuthToken' "${{secrets.AUTH_GITHUB_TOKEN}}"
                 yarn workspaces foreach -v npm publish --access private --tolerate-republish
