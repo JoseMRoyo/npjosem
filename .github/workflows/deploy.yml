@@ -15,7 +15,7 @@ jobs:
               uses: actions/setup-node@v2
               with:
                   node-version: 18
-                  registry-url: https://registry.npmjs.org
+                  registry-url: 'https://npm.pkg.github.com'
             # - name: Collect changes
             #   run: |
             #     git fetch origin ${{ github.event.pull_request.base.ref }}  
@@ -31,6 +31,11 @@ jobs:
             #         break
             #     fi
             #     done
+            - name: Autenticarse con el registro de Github Packages
+              run: |
+                echo "@npjosem:registry=https://npm.pkg.github.com/"> ./.npmrc
+                echo "//npm.pkg.github.com/:_authToken=${{secrets.AUTH_GITHUB_TOKEN}}" >> ./.npmrc
+                cat ./.npmrc
             - name: yarn install
               run: yarn install
             - name: publish
