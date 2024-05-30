@@ -43,6 +43,5 @@ jobs:
 
       - name: Publish to NPM
         run: |
-          cd allure/
           yarn install
-          npm publish
+          npm publish --access private
