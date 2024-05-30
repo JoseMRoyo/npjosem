@@ -1,7 +1,6 @@
 {
   "name": "@npjosem/allure",
   "version": "1.0.1",
-  "private": true,
   "engines": {
     "node": "18 || 20"
   },
