@@ -1,6 +1,0 @@
-{
-  "platform": "github",
-  "includeForks": false,
-  "repositories": ["backstage/community-plugins"],
-  "gitAuthor": "Renovate Bot <bot@renovateapp.com>"
-}

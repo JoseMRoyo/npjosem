@@ -1,0 +1,48 @@
+name: Publish to Github Packages
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      # - name: Generate token
+      #   uses: tibdex/github-app-token@v2
+      #   id: generate-token
+      #   with:
+      #     app_id: ${{ secrets.APP_ID }}
+      #     private_key: ${{ secrets.APP_PRIVATE_KEY }}
+
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '18'
+          registry-url: 'https://npm.pkg.github.com'
+
+      - name: Autenticarse con el registro de Github Packages
+        run: |
+          echo "@npjosem:registry=https://npm.pkg.github.com/"> ./.npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.AUTH_GITHUB_TOKEN }}" >> ./.npmrc
+          cat ./.npmrc
+          
+      - name: Ejecutar yarn install
+        run: yarn install
+
+      - name: Ejecutar npm install
+        run: npm install
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Publish to NPM
+        run: |
+          cd workspaces/allure/
+          yarn install
+          yarn workspaces foreach -v npm publish --access restricted
