@@ -45,4 +45,4 @@ jobs:
         run: |
           cd allure/
           yarn install
-          npm publish --access public
+          npm publish --access restricted
