@@ -5,6 +5,9 @@
   "engines": {
     "node": "18 || 20"
   },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
+  },
   "scripts": {
     "tsc": "tsc",
     "tsc:full": "tsc --skipLibCheck false --incremental false",
