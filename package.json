@@ -12,9 +12,6 @@
     "type": "git",
     "url": "git+https://github.com/JoseMRoyo/npjosem.git"
   },
-  "files": [
-    "workspaces"
-  ],
   "bugs": {
     "url": "https://github.com/JoseMRoyo/npjosem/issues"
   },
