@@ -44,4 +44,4 @@ jobs:
       - name: Publish to NPM
         run: |
           yarn install
-          npm publish --access restricted
+          npm publish --access private
