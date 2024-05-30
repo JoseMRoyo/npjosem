@@ -37,7 +37,10 @@ jobs:
                 echo "//npm.pkg.github.com/:_authToken=${{secrets.AUTH_GITHUB_TOKEN}}" >> ./.npmrc
                 cat ./.npmrc
             - name: yarn install
-              run: yarn install
+              run: |
+                yarn install
+                npm install
+                npm ci
             - name: publish
               run: |
                 cd workspaces/badges/
