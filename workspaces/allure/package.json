@@ -2,7 +2,7 @@
   "name": "@npjosem/allure",
   "version": "1.0.1",
   "license": "UNLICENSED",
-  "private": true,
+  "private": false,
   "engines": {
     "node": "18 || 20"
   },
