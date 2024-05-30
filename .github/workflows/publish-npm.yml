@@ -43,6 +43,6 @@ jobs:
 
       - name: Publish to NPM
         run: |
-          cd workspaces/allure/
+          cd allure/
           yarn install
-          npm publish --access public
+          npm publish --access restricted
