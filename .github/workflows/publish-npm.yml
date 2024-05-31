@@ -30,6 +30,7 @@ jobs:
         run: |
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.AUTH_GITHUB_TOKEN }}" >> ./.npmrc
           echo "@npjosem:registry=https://npm.pkg.github.com/"> ./.npmrc
+          echo @npjosem:always-auth=true
           cat ./.npmrc
           
       - name: Ejecutar yarn install
