@@ -2,6 +2,7 @@
   "name": "@npjosem/allure",
   "version": "1.0.1",
   "license": "UNLICENSED",
+  "author": "josemroyo",
   "engines": {
     "node": "18 || 20"
   },
@@ -31,8 +32,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/backstage/community-plugins",
-    "directory": "workspaces/allure"
+    "url": "https://github.com/JoseMRoyo/npjosem",
+    "directory": "allure"
   },
   "devDependencies": {
     "@backstage/cli": "^0.26.3",
