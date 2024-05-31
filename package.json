@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/JoseMRoyo/npjosem",
   "publishConfig": {
+    "access": "public",
     "registry": "https://npm.pkg.github.com/"
   }
 }
