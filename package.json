@@ -1,5 +1,5 @@
 {
-  "name": "npjosem",
+  "name": "@npjosem/plugins",
   "version": "1.2.0",
   "description": "npjosem community plugins",
   "main": "index.js",
@@ -17,7 +17,6 @@
   },
   "homepage": "https://github.com/JoseMRoyo/npjosem",
   "publishConfig": {
-    "access": "public",
     "registry": "https://npm.pkg.github.com/"
   }
 }
