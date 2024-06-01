@@ -3,7 +3,8 @@
   "version": "1.0.1",
   "license": "UNLICENSED",
   "author": "josemroyo",
-  "private": true,
+  "private": false,
+  "main": "index.js",
   "engines": {
     "node": "18 || 20"
   },
