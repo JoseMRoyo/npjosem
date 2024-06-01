@@ -7,7 +7,7 @@
     "node": "18 || 20"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+    "registry": "https://npm.pkg.github.com/@npjosem"
   },
   "scripts": {
     "tsc": "tsc",
