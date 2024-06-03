@@ -28,11 +28,11 @@ jobs:
         run: |
           echo "TOKEN=$TOKEN" >> ${{ secrets.AUTH_GITHUB_TOKEN}}
           echo 'npmRegistries:' >> ./.yarnrc.yml
-          echo ' "https://npm.pkg.github.com/":' >> ./.yarnrc.yml
-          echo '    npmAuthToken: "${{ env.TOKEN }}"' >> ./.yarnrc.yml
+          echo '"https://npm.pkg.github.com/":' >> ./.yarnrc.yml
+          echo 'npmAuthToken: "${{ env.TOKEN }}"' >> ./.yarnrc.yml
           echo 'npmScopes:' >> ./.yarnrc.yml
-          echo '  npjosem:' >> ./.yarnrc.yml
-          echo '    npmRegistryServer: "https://npm.pkg.github.com"' >> ./.yarnrc.yml
+          echo 'npjosem:' >> ./.yarnrc.yml
+          echo 'npmRegistryServer: "https://npm.pkg.github.com"' >> ./.yarnrc.yml
           cat ./.yarnrc.yml
          
       - name: Ejecutar yarn install
