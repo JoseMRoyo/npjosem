@@ -1,5 +1,5 @@
 {
-  "name": "@npjosem/plugin-allure",
+  "name": "plugin-allure",
   "version": "0.1.51",
   "description": "A Backstage plugin that integrates with Allure",
   "backstage": {
