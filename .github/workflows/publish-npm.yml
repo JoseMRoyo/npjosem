@@ -28,7 +28,7 @@ jobs:
         run: |
           echo 'npmRegistries:' >> ./.yarnrc.yml
           echo '  "https://npm.pkg.github.com/":' >> ./.yarnrc.yml
-          echo '    npmAuthToken: "${{ env.AUTH_GITHUB_TOKEN}}"' >> ./.yarnrc.yml
+          echo '    npmAuthToken: "${{ secrets.AUTH_GITHUB_TOKEN }}"' >> ./.yarnrc.yml
           echo 'npmScopes:' >> ./.yarnrc.yml
           echo '  npjosem:' >> ./.yarnrc.yml
           echo '    npmRegistryServer: "https://npm.pkg.github.com"' >> ./.yarnrc.yml
@@ -42,4 +42,4 @@ jobs:
           cd codescene/
           yarn workspaces foreach --all -v npm publish --access restricted --tag latest
         env:
-          NODE_AUTH_TOKEN: ${{ env.AUTH_GITHUB_TOKEN }}
+          NODE_AUTH_TOKEN: ${{ secrets.AUTH_GITHUB_TOKEN }}
