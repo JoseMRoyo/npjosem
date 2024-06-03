@@ -5,8 +5,8 @@ __metadata:
   version: 8
   cacheKey: 10
 
-"@npjosem/plugins@workspace:.":
+"npjosem-plugins@workspace:.":
   version: 0.0.0-use.local
-  resolution: "@npjosem/plugins@workspace:."
+  resolution: "npjosem-plugins@workspace:."
   languageName: unknown
   linkType: soft

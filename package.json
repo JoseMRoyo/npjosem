@@ -1,5 +1,5 @@
 {
-  "name": "@npjosem/plugins",
+  "name": "npjosem-plugins",
   "version": "1.2.0",
   "description": "npjosem community plugins",
   "main": "index.js",
