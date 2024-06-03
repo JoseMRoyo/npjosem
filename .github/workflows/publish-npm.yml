@@ -27,11 +27,11 @@ jobs:
       - name: Autenticarse con el registro de Github Packages
         run: |
           echo 'npmRegistries:' >> ./.yarnrc.yml
-          echo '  "https://npm.pkg.github.com/":' >> ./.yarnrc.yml
-          echo '    npmAuthToken: "${{ secrets.AUTH_GITHUB_TOKEN }}"' >> ./.yarnrc.yml
+          echo ' "https://npm.pkg.github.com/":' >> ./.yarnrc.yml
+          echo '   npmAuthToken: "${{ secrets.AUTH_GITHUB_TOKEN }}"' >> ./.yarnrc.yml
           echo 'npmScopes:' >> ./.yarnrc.yml
-          echo '  npjosem:' >> ./.yarnrc.yml
-          echo '    npmRegistryServer: "https://npm.pkg.github.com"' >> ./.yarnrc.yml
+          echo ' npjosem:' >> ./.yarnrc.yml
+          echo '   npmRegistryServer: "https://npm.pkg.github.com"' >> ./.yarnrc.yml
           cat ./.yarnrc.yml
          
       - name: Ejecutar yarn install
