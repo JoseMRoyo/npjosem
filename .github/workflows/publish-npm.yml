@@ -27,7 +27,7 @@ jobs:
           registry-url: 'https://npm.pkg.github.com/@npjosem'
       - name: Autenticarse con el registro de Github Packages
         run: |
-          echo "@svsm:registry=https://npm.pkg.github.com/"> ./.npmrc
+          echo "@npjosem:registry=https://npm.pkg.github.com/"> ./.npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.AUTH_GITHUB_TOKEN}}" >> ./.npmrc
           cat ./.npmrc
       - run: |
