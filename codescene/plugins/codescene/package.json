@@ -1,5 +1,5 @@
 {
-  "name": "@backstage-community/plugin-codescene",
+  "name": "@npjosem/plugin-codescene",
   "version": "0.1.28",
   "backstage": {
     "role": "frontend-plugin"
@@ -12,8 +12,8 @@
   "homepage": "https://backstage.io",
   "repository": {
     "type": "git",
-    "url": "https://github.com/backstage/community-plugins",
-    "directory": "workspaces/codescene/plugins/codescene"
+    "url": "https://github.com/JoseMRoyo/npjosem.git",
+    "directory": "codescene/plugins/codescene"
   },
   "license": "Apache-2.0",
   "sideEffects": false,

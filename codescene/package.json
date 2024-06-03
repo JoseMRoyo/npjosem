@@ -28,8 +28,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/backstage/community-plugins",
-    "directory": "workspaces/codescene"
+    "url": "https://github.com/JoseMRoyo/npjosem.git",
+    "directory": "codescene"
   },
   "devDependencies": {
     "@backstage/cli": "^0.26.3",

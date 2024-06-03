@@ -18,7 +18,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: '18'
-          registry-url: 'https://npm.pkg.github.com'
+          registry-url: 'https://npm.pkg.github.com/'
  
       - name: Set up Yarn 4
         run: |
@@ -39,6 +39,7 @@ jobs:
  
       - name: Publish to NPM
         run: |
+          cd codescene/
           yarn workspaces foreach --all -v npm publish --access restricted --tag latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_GITHUB_TOKEN}}
