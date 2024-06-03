@@ -31,7 +31,6 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.AUTH_GITHUB_TOKEN}}" >> ./.npmrc
           cat ./.npmrc
       - run: |
-          cd allure/
           npm install
           npm publish
     env:
