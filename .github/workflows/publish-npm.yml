@@ -19,9 +19,9 @@ jobs:
           node-version: '18'
           registry-url: 'https://npm.pkg.github.com'
  
-      - name: Set up Yarn 3
+      - name: Set up Yarn 4
         run: |
-          yarn set version 3
+          yarn set version berry
  
       - name: Autenticarse con el registro de Github Packages
         run: |
