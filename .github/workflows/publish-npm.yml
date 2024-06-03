@@ -25,6 +25,8 @@ jobs:
         with:
           node-version: '18'
           registry-url: 'https://npm.pkg.github.com/@npjosem'
+      - name: yarn 4
+        run: yarn set version berry
       - name: Autenticarse con el registro de Github Packages
         run: |
           echo "@npjosem:registry=https://npm.pkg.github.com/"> ./.npmrc
