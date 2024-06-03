@@ -19,5 +19,6 @@
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/@npjosem"
   },
-  "keywords": []
+  "keywords": [],
+  "packageManager": "yarn@4.2.2"
 }
