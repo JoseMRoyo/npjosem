@@ -39,6 +39,6 @@ jobs:
  
       - name: Publish to NPM
         run: |
-          yarn workspaces foreach --all -v npm publish --access restricted --tolerate-republish -tag latest
+          yarn workspaces foreach --all -v npm publish --access restricted --tolerate-republish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_GITHUB_TOKEN }}
