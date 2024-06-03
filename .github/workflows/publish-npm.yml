@@ -43,4 +43,4 @@ jobs:
           yarn workspaces foreach --all -v npm publish --access restricted --tag latest
         env:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_GITHUB_TOKEN}}
-          NPM_CONFIG_USERCONFIG: /home/runner/work/_temp/.yarnrc.yml
+          NPM_CONFIG_USERCONFIG: ./.yarnrc
