@@ -25,8 +25,9 @@ jobs:
         with:
           node-version: '18'
           registry-url: 'https://npm.pkg.github.com'
-      - run: cd allure/
-      - run: npm install
-      - run: npm publish
+      - run: |
+          cd allure/
+          npm install
+          npm publish
     env:
       NODE_AUTH_TOKEN: ${{secrets.AUTH_GITHUB_TOKEN}}
