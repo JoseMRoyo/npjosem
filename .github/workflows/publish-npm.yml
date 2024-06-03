@@ -38,8 +38,6 @@ jobs:
  
       - name: Publish to NPM
         run: |
-          cd allure/
-          yarn install
           yarn workspaces foreach --all -v npm publish --access restricted --tolerate-republish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_GITHUB_TOKEN }}
