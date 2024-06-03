@@ -31,6 +31,8 @@ jobs:
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.AUTH_GITHUB_TOKEN}}" >> ./.npmrc
           cat ./.npmrc
       - run: |
+          cd allure/
+          npm login --scope=@npjosem --auth-type=legacy --registry=https://npm.pkg.github.com -u josemroyo -p ${{secrets.AUTH_GITHUB_TOKEN}}
           npm install
           npm publish
     env:
