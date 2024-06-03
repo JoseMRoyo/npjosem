@@ -30,8 +30,11 @@ jobs:
           echo "@npjosem:registry=https://npm.pkg.github.com/"> ./.npmrc
           echo "//npm.pkg.github.com/:_authToken=${{ secrets.AUTH_GITHUB_TOKEN}}" >> ./.npmrc
           cat ./.npmrc
-      - run: |
-          npm install
-          npm publish
-    env:
-      NODE_AUTH_TOKEN: ${{secrets.AUTH_GITHUB_TOKEN}}
+      - name: publish
+        run: |
+            cd allure
+            yarn install
+            yarn config set -H 'npmAuthToken' "${{secrets.AUTH_GITHUB_TOKEN}}"
+            yarn workspaces foreach -v npm publish --tolerate-republish
+        env:
+          NODE_AUTH_TOKEN: ${{secrets.AUTH_GITHUB_TOKEN}}
