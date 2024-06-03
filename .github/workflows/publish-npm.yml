@@ -25,7 +25,6 @@ jobs:
  
       - name: Autenticarse con el registro de Github Packages
         run: |
-          cd allure/
           echo 'npmRegistries:' >> ./.yarnrc.yml
           echo ' "https://npm.pkg.github.com":' >> ./.yarnrc.yml
           echo '    npmAuthToken: "${{ secrets.AUTH_GITHUB_TOKEN }}"' >> ./.yarnrc.yml
@@ -39,6 +38,8 @@ jobs:
  
       - name: Publish to NPM
         run: |
+          cd allure/
+          yarn install
           yarn workspaces foreach --all -v npm publish --access restricted --tolerate-republish
         env:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_GITHUB_TOKEN }}
