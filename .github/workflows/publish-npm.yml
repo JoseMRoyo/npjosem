@@ -25,6 +25,11 @@ jobs:
         with:
           node-version: '18'
           registry-url: 'https://npm.pkg.github.com'
+      - name: Autenticarse con el registro de Github Packages
+        run: |
+          echo "@svsm:registry=https://npm.pkg.github.com/"> ./.npmrc
+          echo "//npm.pkg.github.com/:_authToken=${{ secrets.AUTH_GITHUB_TOKEN}}" >> ./.npmrc
+          cat ./.npmrc
       - run: |
           cd allure/
           npm install
