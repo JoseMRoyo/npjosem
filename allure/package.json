@@ -8,7 +8,8 @@
     "node": "18 || 20"
   },
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/@npjosem"
+    "registry": "https://npm.pkg.github.com/@npjosem",
+    "access": "restricted"
   },
   "scripts": {
     "tsc": "tsc",
