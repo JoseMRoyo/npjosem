@@ -37,10 +37,11 @@ jobs:
       - name: Ejecutar yarn install
         run: yarn install
  
-      - name: Publish to NPM
+      - name: select package
         run: |
           cd codescene/
           yarn install
-          yarn workspaces foreach --all -v npm publish --access public
+      - name: publish
+        run: yarn workspaces foreach --all -v npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.AUTH_GITHUB_TOKEN }}
